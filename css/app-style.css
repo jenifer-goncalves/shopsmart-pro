@@ -2,39 +2,90 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
 }
 
 body{
     background-color: blanchedalmond;
-}
-
-.header{
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+    flex-direction: column;
+}
+
+.header{
     text-align: center;
     margin-top: 50px;
-    height: 10vh;
+    padding:  15px;
     color: white;
     background-color: rgb(15, 23, 94);
+    border-radius: 10px;
 }
 
 .card{
     padding: 50px;
 }
 
-.input{
-    border-radius: 20px;
-    
-}
 
-.input-group input{
-    
+.input-group{
+    display: flex;
+    flex-direction: column;
     padding: 10px;
 }
 
+.input-group input{
+    gap: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;;
+}
+
+button{
+    padding: 50px;
+    background-color: rgb(228, 190, 140);
+    border-radius: 15px;
+}
+
+
 .buttons{
-    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    flex-direction: column;
+    margin-top: 50px;
+    min-height: 40px;
+    min-width: 60px;
     background-color: rgb(15, 23, 94);
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.5);
+}
+
+.btn-clear{
+    background-color: rgb(238, 98, 93);
+}
+
+.resultado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 20px;
+    min-width: 40px;
+    padding: 50px;
+    background-color: rgb(50, 85, 151);
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    
+}
+
+.resultado h2{
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+}
+
+.resultado li{
+    font-size: 20px;
+    color: black;
 }

@@ -10,16 +10,18 @@ function calcularTotal(){
     const v2 = parseFloat(input2.value);
 
     if (isNaN(v1) || isNaN(v2)){
-        alert('Os campos não foram preenchidos corretamente. Digite um número.')
+        resultado.style.display = 'flex';
+        resultado.innerHTML = `Os campos não foram preenchidos corretamente. Digite um número.`
+    
     
     } else{
         resultado.style.display = 'flex';
         resultado.innerHTML = 
         `          
     <ul>
+        <h2>O Total a pagar é R$<span>${v1 * v2}</span>
             <li>O preço do item desejado é R$<span> ${v1} </span> </li>
             <li>A quantidade de itens é: <span>${v2}</span> </li>       
-            <li>O total a pagar é: R$<span>${v1 * v2}</span> </li>
     </ul>
         `;
     
@@ -31,19 +33,20 @@ function calcularTotal(){
 function desconto(){
     const v1 = parseFloat(input1.value);
     const v2 = parseFloat(input2.value);
-    let desconto = (v1*v2)/100;
+    const desconto = (v1*v2)/100;
 
     if (isNaN(v1) || isNaN(v2)){
-        alert('Os campos não foram preenchidos corretamente. Digite um número.')
+        resultado.style.display = 'flex';
+        resultado.innerHTML = `Os campos não foram preenchidos corretamente. Digite um número.`
     
     } else{
         resultado.style.display = 'flex';
         resultado.innerHTML = 
         `          
     <ul>
+        <h2>O Total descontado a pagar é R$<span>${v1 - desconto}</span>
             <li>O preço do item desejado é R$<span> ${v1} </span> </li>
             <li>O desconto aplicado é de: <span>${v2}</span>% </li>       
-            <li>O total a pagar é: R$<span>${v1 - desconto}</span> </li>
     </ul>
         `;
     
@@ -55,19 +58,21 @@ function desconto(){
 function juros() {
     const v1 = parseFloat(input1.value);
     const v2 = parseFloat(input2.value);
-    let acrescimo = (v1*v2)/100;
+    const acrescimo = (v1*v2)/100;
 
     if (isNaN(v1) || isNaN(v2)){
-        alert('Os campos não foram preenchidos corretamente. Digite um número.')
+        resultado.style.display = 'flex';
+        resultado.innerHTML = `Os campos não foram preenchidos corretamente. Digite um número.`
+    
     
     } else{
         resultado.style.display = 'flex';
         resultado.innerHTML = 
         `          
     <ul>
-            <li>O preço do item é R$<span> ${v1} </span> </li>
+        <h2>O Total com Juros é R$<span>${acrescimo + v1}</span>
+            <li>O preço do item desejado é R$<span> ${v1} </span> </li>
             <li>Os juros são de <span>${v2}</span>% </li>       
-            <li>O total a pagar é: R$<span>${acrescimo + v1}</span> </li>
     </ul>
         `;
     
@@ -82,16 +87,18 @@ function comissao(){
     const taxa = v1*(v2/100);
 
     if (isNaN(v1) || isNaN(v2)){
-        alert('Os campos não foram preenchidos corretamente. Digite um número.')
+        resultado.style.display = 'flex';
+        resultado.innerHTML = `Os campos não foram preenchidos corretamente. Digite um número.`
+    
     
     } else{
         resultado.style.display = 'flex';
         resultado.innerHTML = 
         `          
     <ul>
-            <li>O preço do item desejado é R$ <span> ${v1} </span> </li>
+        <h2>Sua Comissão é R$<span>${taxa}</span>
+            <li>O preço do item vendido é R$ <span> ${v1} </span> </li>
             <li>A taxa aplicada é: <span>${v2}</span>% </li>       
-            <li>A comissão é de R$<span>${taxa}</span> </li>
     </ul>
         `;
     
@@ -106,16 +113,18 @@ function lucro(){
     const lucro = v1 - v2;
 
     if (isNaN(v1) || isNaN(v2)){
-        alert('Os campos não foram preenchidos corretamente. Digite um número.')
+        resultado.style.display = 'flex';
+        resultado.innerHTML = `Os campos não foram preenchidos corretamente. Digite um número.`
+    
     
     } else{
         resultado.style.display = 'flex';
         resultado.innerHTML = 
         `          
     <ul>
+        <h2>O Lucro Total é R$<span>${lucro}</span>
             <li>O preço de venda é R$<span> ${v1} </span> </li>
             <li>O custo foi de R$<span>${v2}</span> </li>       
-            <li>O lucro total é de R$<span>${lucro}</span> </li>
     </ul>
         `;
     
