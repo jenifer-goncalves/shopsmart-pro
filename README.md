@@ -53,3 +53,20 @@ Como este é um projeto *front-end* estático, você não precisa instalar depen
 │   └── app-style.css # Estilização e layout (Grid/Flex)
 └── js/
     └── app.js        # Lógica de cálculo e manipulação de interface
+
+---
+
+
+## 💡 Próximas Melhorias (Roadmap)
+[ ] Adicionar suporte a temas (Dark Mode/Light Mode).
+
+[ ] Implementar histórico de cálculos realizados.
+
+[ ] Adicionar formatação automática para moeda local (BRL).
+
+[ ] Tornar o layout 100% responsivo para dispositivos móveis menores.
+
+---
+
+## 👤 Autor
+Desenvolvido por Jenifer – sinta-se à vontade para entrar em contato!
