@@ -11,7 +11,7 @@ function calcularTotal(){
 
     if (isNaN(v1) || isNaN(v2)){
         resultado.style.display = 'flex';
-        resultado.innerHTML = `Os campos não foram preenchidos corretamente. Digite um número.`
+        resultado.innerHTML = `Erro de válidação. Os campos não foram preenchidos corretamente. Digite os valores numéricos 1 e 2.`
     
     
     } else{
@@ -35,7 +35,7 @@ function desconto(){
 
     if (isNaN(v1) || isNaN(v2)){
         resultado.style.display = 'flex';
-        resultado.innerHTML = `Os campos não foram preenchidos corretamente. Digite um número.`
+        resultado.innerHTML = `Erro de válidação. Os campos não foram preenchidos corretamente. Digite os valores numéricos 1 e 2.`
     
     } else{
         resultado.style.display = 'flex';
@@ -59,7 +59,7 @@ function juros() {
 
     if (isNaN(v1) || isNaN(v2)){
         resultado.style.display = 'flex';
-        resultado.innerHTML = `Os campos não foram preenchidos corretamente. Digite um número.`
+        resultado.innerHTML = `Erro de válidação. Os campos não foram preenchidos corretamente. Digite os valores numéricos 1 e 2.`
     
     
     } else{
@@ -82,7 +82,7 @@ function comissao(){
 
     if (isNaN(v1) || isNaN(v2)){
         resultado.style.display = 'flex';
-        resultado.innerHTML = `Os campos não foram preenchidos corretamente. Digite um número.`
+        resultado.innerHTML = `Erro de válidação. Os campos não foram preenchidos corretamente. Digite os valores numéricos 1 e 2.`
     
     
     } else{
@@ -107,7 +107,7 @@ function lucro(){
 
     if (isNaN(v1) || isNaN(v2)){
         resultado.style.display = 'flex';
-        resultado.innerHTML = `Os campos não foram preenchidos corretamente. Digite um número.`
+        resultado.innerHTML = `Erro de válidação. Os campos não foram preenchidos corretamente. Digite os valores numéricos 1 e 2.`
     
     
     } else{
