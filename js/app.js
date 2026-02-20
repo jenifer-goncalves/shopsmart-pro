@@ -11,15 +11,15 @@ function calcularTotal(){
 
     if (isNaN(v1) || isNaN(v2)){
         resultado.style.display = 'flex';
-        resultado.innerHTML = `Erro de válidação. Os campos não foram preenchidos corretamente. Digite os valores numéricos 1 e 2.`
+        resultado.innerHTML = `<p>Erro de válidação. Os campos não foram preenchidos <br> corretamente. Digite os valores numéricos 1 e 2.</p>`
     
     
     } else{
         resultado.style.display = 'flex';
         resultado.innerHTML = 
-        `<h2>O Total a pagar é R$<span>${v1 * v2.toFixed(2)}</span></h2>        
+        `<h2>O Total a pagar é R$ <span>${v1 * v2.toFixed(2)}</span></h2>        
     <ul>
-            <li>O preço do item desejado é R$<span> ${v1} </span> </li>
+            <li>O preço do item desejado é R$ <span> ${v1} </span> </li>
             <li>A quantidade de itens é: <span>${v2}</span> </li>       
     </ul>
         `;
@@ -35,14 +35,14 @@ function desconto(){
 
     if (isNaN(v1) || isNaN(v2)){
         resultado.style.display = 'flex';
-        resultado.innerHTML = `Erro de válidação. Os campos não foram preenchidos corretamente. Digite os valores numéricos 1 e 2.`
+        resultado.innerHTML = `<p>Erro de válidação. Os campos não foram preenchidos <br> corretamente. Digite os valores numéricos 1 e 2.</p>`
     
     } else{
         resultado.style.display = 'flex';
         resultado.innerHTML = 
-        `<h2>O Total descontado a pagar é R$<span>${v1 - desconto.toFixed(2)}</span></h2>         
+        `<h2>O Total descontado a pagar é R$ <span>${v1 - desconto.toFixed(2)}</span></h2>         
     <ul>
-            <li>O preço do item desejado é R$<span> ${v1} </span> </li>
+            <li>O preço do item desejado é R$ <span> ${v1} </span> </li>
             <li>O desconto aplicado é de: <span>${v2}</span>% </li>       
     </ul>
         `;
@@ -59,15 +59,15 @@ function juros() {
 
     if (isNaN(v1) || isNaN(v2)){
         resultado.style.display = 'flex';
-        resultado.innerHTML = `Erro de válidação. Os campos não foram preenchidos corretamente. Digite os valores numéricos 1 e 2.`
+        resultado.innerHTML = `<p>Erro de válidação. Os campos não foram preenchidos <br> corretamente. Digite os valores numéricos 1 e 2.</p>`
     
     
     } else{
         resultado.style.display = 'flex';
         resultado.innerHTML = 
-        `<h2>O Total com Juros é R$<span>${(acrescimo + v1).toFixed(2)}</span></h2>         
+        `<h2>O Total com Juros é R$ <span>${(acrescimo + v1).toFixed(2)}</span></h2>         
     <ul>
-            <li>O preço do item desejado é R$<span> ${v1} </span> </li>
+            <li>O preço do item desejado é R$ <span> ${v1} </span> </li>
             <li>Os juros são de <span>${v2}</span>% </li>       
     </ul>
         `;
@@ -82,13 +82,13 @@ function comissao(){
 
     if (isNaN(v1) || isNaN(v2)){
         resultado.style.display = 'flex';
-        resultado.innerHTML = `Erro de válidação. Os campos não foram preenchidos corretamente. Digite os valores numéricos 1 e 2.`
+        resultado.innerHTML = `<p>Erro de válidação. Os campos não foram preenchidos <br> corretamente. Digite os valores numéricos 1 e 2.</p>`
     
     
     } else{
         resultado.style.display = 'flex';
         resultado.innerHTML = 
-        `<h2>Sua Comissão é R$<span>${taxa.toFixed(2)}</span></h2>        
+        `<h2>Sua Comissão é R$ <span>${taxa.toFixed(2)}</span></h2>        
     <ul>
             <li>O preço do item vendido é R$ <span> ${v1} </span> </li>
             <li>A taxa aplicada é: <span>${v2}</span>% </li>       
@@ -107,16 +107,16 @@ function lucro(){
 
     if (isNaN(v1) || isNaN(v2)){
         resultado.style.display = 'flex';
-        resultado.innerHTML = `Erro de válidação. Os campos não foram preenchidos corretamente. Digite os valores numéricos 1 e 2.`
+        resultado.innerHTML = `<p>Erro de válidação. Os campos não foram preenchidos <br> corretamente. Digite os valores numéricos 1 e 2.</p>`
     
     
     } else{
         resultado.style.display = 'flex';
         resultado.innerHTML = 
-        `<h2>O Lucro Total é R$<span>${lucro.toFixed(2)}</span></h2>        
+        `<h2>O Lucro Total é R$ <span>${lucro.toFixed(2)}</span></h2>        
     <ul>
-            <li>O preço de venda é R$<span> ${v1} </span> </li>
-            <li>O custo foi de R$<span>${v2}</span> </li>       
+            <li>O preço de venda é R$ <span> ${v1} </span> </li>
+            <li>O custo foi de R$ <span>${v2}</span> </li>       
     </ul>
         `;
     }
