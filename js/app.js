@@ -17,14 +17,12 @@ function calcularTotal(){
     } else{
         resultado.style.display = 'flex';
         resultado.innerHTML = 
-        `          
+        `<h2>O Total a pagar é R$<span>${v1 * v2}</span></h2>          
     <ul>
-        <h2>O Total a pagar é R$<span>${v1 * v2}</span>
             <li>O preço do item desejado é R$<span> ${v1} </span> </li>
             <li>A quantidade de itens é: <span>${v2}</span> </li>       
     </ul>
         `;
-    
         
     }
 
@@ -42,9 +40,8 @@ function desconto(){
     } else{
         resultado.style.display = 'flex';
         resultado.innerHTML = 
-        `          
+        `<h2>O Total descontado a pagar é R$<span>${v1 - desconto}</span></h2>         
     <ul>
-        <h2>O Total descontado a pagar é R$<span>${v1 - desconto}</span>
             <li>O preço do item desejado é R$<span> ${v1} </span> </li>
             <li>O desconto aplicado é de: <span>${v2}</span>% </li>       
     </ul>
@@ -68,15 +65,12 @@ function juros() {
     } else{
         resultado.style.display = 'flex';
         resultado.innerHTML = 
-        `          
+        `<h2>O Total com Juros é R$<span>${acrescimo + v1}</span></h2>          
     <ul>
-        <h2>O Total com Juros é R$<span>${acrescimo + v1}</span>
             <li>O preço do item desejado é R$<span> ${v1} </span> </li>
             <li>Os juros são de <span>${v2}</span>% </li>       
     </ul>
         `;
-    
-        
     }
 
 }
@@ -94,9 +88,8 @@ function comissao(){
     } else{
         resultado.style.display = 'flex';
         resultado.innerHTML = 
-        `          
+        `<h2>Sua Comissão é R$<span>${taxa}</span></h2>         
     <ul>
-        <h2>Sua Comissão é R$<span>${taxa}</span>
             <li>O preço do item vendido é R$ <span> ${v1} </span> </li>
             <li>A taxa aplicada é: <span>${v2}</span>% </li>       
     </ul>
@@ -120,15 +113,12 @@ function lucro(){
     } else{
         resultado.style.display = 'flex';
         resultado.innerHTML = 
-        `          
+        `<h2>O Lucro Total é R$<span>${lucro}</span></h2>          
     <ul>
-        <h2>O Lucro Total é R$<span>${lucro}</span>
             <li>O preço de venda é R$<span> ${v1} </span> </li>
             <li>O custo foi de R$<span>${v2}</span> </li>       
     </ul>
         `;
-    
-        
     }
 
 }
