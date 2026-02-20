@@ -77,11 +77,12 @@ button{
     text-align: center;
     border-radius: 10px;
     margin-bottom: 50px;
+    flex-direction: column;
     
 }
 
 .resultado h2{
-    font-size: 2rem;
+    font-size: 35px;
     color: rgb(255, 255, 255);
 }
 
